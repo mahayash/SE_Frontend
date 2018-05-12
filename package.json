@@ -1,0 +1,35 @@
+{
+  "name": "square-education",
+  "description": "Square Education",
+  "version": "1.0.0",
+  "author": "Square Education",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gatsby": "^1.9.241",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-source-mongodb": "^1.5.19",
+    "gatsby-transformer-remark": "^1.7.39",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0",
+    "react-slick": "^0.23.1",
+    "reactstrap": "^6.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  }
+}

@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+}
+#indexContainer {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+   /*change to white background only, the shadow of the cards look promient on white bg*/
+}
+#indexBody {
+  padding-bottom: 60px; /* Height of the footer */
+  margin-top: 50px;
+  background-color: #f7f7f6;
+}
+#indexFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #6cf;
+}
