@@ -1,0 +1,2 @@
+webpackJsonp([40275710597918],{302:function(e,t,l){"use strict";function u(e){return e&&e.__esModule?e:{default:e}}function n(){return r.default.createElement("div",null,r.default.createElement(f.default,{title:"Title Courses"}),r.default.createElement("div",null,r.default.createElement("h1",null,"This is my Course Page")))}t.__esModule=!0,t.default=n;var a=l(1),r=u(a),d=l(63),f=u(d);e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-courses-js-e029c85bffe1fb165bd0.js.map
