@@ -1,2 +1,0 @@
-webpackJsonp([0xb4ee1ba910b2],{305:function(e,t,l){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function u(){return d.default.createElement("div",null,d.default.createElement(r.default,{title:"Online"}),d.default.createElement("div",null,d.default.createElement("h1",null,"Coming Soon")))}t.__esModule=!0,t.default=u;var a=l(1),d=n(a),f=l(63),r=n(f);e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-online-js-b4d5c3aeb60e501c1297.js.map
