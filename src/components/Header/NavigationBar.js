@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import 'bootstrap/dist/css/bootstrap.css'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import React from "react";
+import Link from "gatsby-link";
+import "bootstrap/dist/css/bootstrap.css";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 
 const NavigationBar = () => (
-  <Navbar collapseOnSelect fixedTop inverse >
+  <Navbar collapseOnSelect fixedTop inverse>
     <Navbar.Header>
       <Navbar.Brand>
         <Link to="/"> Square Education Institute</Link>
@@ -13,28 +13,26 @@ const NavigationBar = () => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        <NavItem eventKey={0}>
-          <Link to="/courses/"> Courses</Link>
+        <NavItem eventKey={1} href="/courses">
+          Courses
         </NavItem>
-        <NavItem eventKey={1}>
-          <Link to="/online"> Online</Link>
-        </NavItem>
-        <NavItem eventKey={2}>
+        <Link to="/online"> Online</Link>
+        <NavItem>
           <Link to="/form"> Forms</Link>
         </NavItem>
-        <NavItem eventKey={3}>
+        <NavItem>
           <Link to="/students"> Students</Link>
         </NavItem>
-        <NavItem eventKey={4}>
+        <NavItem>
           <Link to="/team"> Team</Link>
         </NavItem>
-        <NavItem eventKey={5}>
+        <NavItem>
           <Link to="/contact"> Contact</Link>
         </NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-)
+);
 
 // const Header = () => (
 //   <div
@@ -95,4 +93,4 @@ const NavigationBar = () => (
 //   </div>
 // )
 
-export default NavigationBar
+export default NavigationBar;
