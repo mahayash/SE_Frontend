@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-source-mongodb`,
       options: {
-        dbName: 'SquareDB',
+        dbName: 'squareeducation',
         collection: [`displaycategories`,`studentscores`,`testimonials`],
         server: { address: `localhost`, port: `27017` },
       },

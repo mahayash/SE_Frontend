@@ -1,34 +1,34 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import { Button } from 'react-bootstrap'
-import SpotLightSlider from '../components/Slider/spotLightSlider'
-import MultiContentSlider from '../components/Slider/multiContentSlider'
+import React from "react";
+import Link from "gatsby-link";
+import { Button } from "react-bootstrap";
+import SpotLightSlider from "../components/Slider/spotLightSlider";
+import MultiContentSlider from "../components/Slider/multiContentSlider";
 
 export default function IndexPage({ data }) {
-  let topScorer = []
-  let subjectHighest = []
-  let growthAchieved = []
-  let testimonial = []
+  let topScorer = [];
+  let subjectHighest = [];
+  let growthAchieved = [];
+  let testimonial = [];
 
-  if (data.allMongodbSquareDbStudentscores != null) {
-    var dataStr = data.allMongodbSquareDbStudentscores.edges
+  if (data.allMongodbSquareeducationStudentscores != null) {
+    var dataStr = data.allMongodbSquareeducationStudentscores.edges;
     for (let i = 0; i < dataStr.length; i++) {
-      const item = dataStr[i]
+      const item = dataStr[i];
       switch (item.node.diplayInCategories) {
         case 1:
-          topScorer.push(item)
-          break
+          topScorer.push(item);
+          break;
         case 2:
-          subjectHighest.push(item)
-          break
+          subjectHighest.push(item);
+          break;
         case 3:
-          growthAchieved.push(item)
-          break
+          growthAchieved.push(item);
+          break;
       }
     }
   }
-  if (data.allMongodbSquareDbTestimonials != null) {
-    testimonial = data.allMongodbSquareDbTestimonials.edges
+  if (data.allMongodbSquareeducationTestimonials != null) {
+    testimonial = data.allMongodbSquareeducationTestimonials.edges;
   }
   return (
     /** Pre-defined  */
@@ -37,34 +37,34 @@ export default function IndexPage({ data }) {
       <br />
       <MultiContentSlider
         displayValue={topScorer}
-        displayInCategory={'Top Scorer'}
+        displayInCategory={"Top Scorer"}
       />
       <br />
       <MultiContentSlider
         displayValue={subjectHighest}
-        displayInCategory={'Subject Highest'}
+        displayInCategory={"Subject Highest"}
       />
       <br />
       <MultiContentSlider
         displayValue={growthAchieved}
-        displayInCategory={'Growth Achieved'}
+        displayInCategory={"Growth Achieved"}
       />
       <br />
       {/* Parents testimonial Card */}
       <MultiContentSlider
         displayValue={testimonial}
-        displayInCategory={'Testimonials'}
+        displayInCategory={"Testimonials"}
       />
       <br />
       {/* Auto scroll list of schools */}
     </div>
-  )
+  );
 }
 
 // TopScorer / SubjectHighest / Growth
 export const studentQuery = graphql`
   query finalResult {
-    allMongodbSquareDbTestimonials {
+    allMongodbSquareeducationTestimonials {
       edges {
         node {
           id
@@ -83,7 +83,7 @@ export const studentQuery = graphql`
         }
       }
     }
-    allMongodbSquareDbStudentscores {
+    allMongodbSquareeducationStudentscores {
       edges {
         node {
           studentName {
@@ -94,9 +94,9 @@ export const studentQuery = graphql`
           percentScored
           examination
           school
-          courses
-          currentPercent
-          diplayInCategories
+          courseOpted
+          lastPercent
+          displayInCategories
           lastPercent
           studentRank
           scoredIn {
@@ -114,4 +114,4 @@ export const studentQuery = graphql`
       }
     }
   }
-`
+`;
